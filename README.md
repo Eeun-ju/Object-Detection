@@ -21,3 +21,12 @@ Mask R-CNN은 물체 분류와 위치를 모두 나타내는데, Box형식이 �
 Classification, BBox Regression, Mask를 동시에 얻으며 Fast R-CNN에 mask를 추가한 모델이다.  
 
 github 링크 : https://github.com/matterport/Mask_RCNN
+
+### 2D pose estimation
+
+사람의 관절을 찾아 움직임을 관찰하는 기술로, 피트니스 분야에서 자주 사용된다. 해당 논문은 동작을 인식하고 그 자세를 측정하는 모델로 2019년 하계 현장실습에서 논문 세미나, 구현을 해본 모델이다.  
++ 제목 : Realtime Multi-Person 2D Pose Estimation using Part Affinity
++ 저자 : Zhe Cao, Tomas Simon, Shih-En Wei, Yaser Sheikh(2016.11.24)
+
+참고자료 : https://www.mimul.com/blog/realtime-multi-person-pose-estimation/
+github 링크 : https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation
