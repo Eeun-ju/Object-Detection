@@ -16,6 +16,8 @@ CNN은 바로 object Detection 분야에 적용되지 못하고 있다가 R-CNN�
 
 ### Mask R-CNN
 
-농촌진흥청 - 꽃 개수 카운팅 프로젝트에서 사용한 코드이다. Mask R-CNN은 물체 분류와 위치를 모두 나타내는데, Box형식이 아닌 mask 한다. Instance Segmentation까지 다루는 특징이 있다.   
-Classification, BBox Regression, Mask를 동시에 얻으며 Fast R-CNN에 mask를 추가한 모델이다. 
+농촌진흥청 - 꽃 개수 카운팅 프로젝트에서 사용한 코드이다. 학습 이미지 4장 정도를 이용하여 다른 이미지 속 꽃의 위치와 개수 예측의 타탕도를 확인하고, 수학적 연구방법과 실행속도, 정분류, 오분류 정도를 비교한다.   
+Mask R-CNN은 물체 분류와 위치를 모두 나타내는데, Box형식이 아닌 mask 한다. Instance Segmentation까지 다루는 특징이 있다.   
+Classification, BBox Regression, Mask를 동시에 얻으며 Fast R-CNN에 mask를 추가한 모델이다.  
+
 github 링크 : https://github.com/matterport/Mask_RCNN
