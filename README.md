@@ -28,5 +28,8 @@ github 링크 : https://github.com/matterport/Mask_RCNN
 + 제목 : Realtime Multi-Person 2D Pose Estimation using Part Affinity
 + 저자 : Zhe Cao, Tomas Simon, Shih-En Wei, Yaser Sheikh(2016.11.24)
 
-참고자료 : https://www.mimul.com/blog/realtime-multi-person-pose-estimation/
+Pose Estimation이란 컴퓨터 비전에서 객체의 위치와 방향을 탐지하는 일반적인 문제로 사람의 신체관절인 point가 어떻게 구성되어있는지 위치를 측정하고 추정하는 것이다. Part Arrinity Fields는 찾은 관절(point)끼리의 연결해주는 역할을 한다.  
+실시간으로 들어오는 영상을 이미지로 캡쳐하여 이미지의 크기에 맞는 input shape을 갖고, 19개의 layer를 가진 cnn 모델 VGG19 layer 중 10개의 layer만 통과하여 특징맵을 추출한다. 추출된 맵은 two-branch multi-stage CNN에 들어간다.(큰 모델) branch1에서는 confidence map을 branch2 에서는 part affinity fields를 얻는다. feature map을 branch1,2 에서 1x1 줄인 후 다시 채널을 늘리는 형태로 진행하는데, 이때 구체적인 패턴을 잘 인식하게 해준다.  
+
+참고자료 : https://www.mimul.com/blog/realtime-multi-person-pose-estimation/  
 github 링크 : https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation
